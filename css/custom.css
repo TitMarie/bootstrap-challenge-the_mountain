@@ -1,10 +1,29 @@
 @font-face {
     font-family: newFont;
-    src: url('../fonts/glyphicons-halflings-regular.woff')
+    src: url('../fonts/glyphicons-halflings-regular.woff');
 }
+
+@font-face {
+    font-family: 'typicons';
+    src: url("../typicons.font-master/src/font/typicons.eot");
+    src: url("../typicons.font-master/src/font/typicons.eot?#iefix") format('embedded-opentype'),
+         url("../typicons.font-master/src/font/typicons.woff") format('woff'),
+         url("../typicons.font-master/src/font/typicons.ttf") format('truetype'),
+         url("../typicons.font-master/src/font/typicons.svg#typicons") format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
 
 html {
     font-size: 1rem;
+}
+
+.paragraphe {
+    font-family: 'Roboto', sans-serif;
+}
+
+.titre {
+    font-family: 'Rokkitt', serif;
 }
 
 .text {
@@ -15,11 +34,27 @@ html {
     line-height: 3;
 }
 
+.interligne {
+    line-height: 2;
+}
+
 #home {
     background: url('../images/bg_header.jpg');
     background-size: cover;
     width: 100vw;
     height: 100vh;
+}
+
+#features {
+    color: dimgrey;
+}
+
+#about {
+    background: url('../images/bg_nuage.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 140vh;
+    color: white;
 }
 
 nav {
@@ -31,10 +66,19 @@ nav {
 }
 
 .suiteLogo {
-    font-size: 2rem
+    font-size: 2.2rem
 }
 
-@media screen and (min-width: 960px) {
+.customcard {
+    border: 1px solid white;
+}
+
+.backgroundcolor {
+    background-color: rgba(0, 179, 250, 0.3);
+    height: 140vh;
+}
+
+@media screen and (min-width: 961px) {
     .text {
         padding-top: 15vh;
     }
@@ -50,6 +94,11 @@ nav {
 
     .logo {
         margin-left: 3.5em;
+        width: 12rem;
+    }
+
+    .suiteLogo {
+        font-size: 2.4rem;
     }
 }
 
@@ -78,24 +127,45 @@ nav {
     }
 }
 
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    #about {
+        background: url('../images/bg_nuage.jpg');
+        background-size: cover;
+        width: 100vw;
+        height: 90vh;
+        color: white;
+    }
+
+    .backgroundcolor {
+        background-color: rgba(0, 179, 250, 0.3);
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #home {
+        background: url('../images/bg_header.jpg');
+        background-size: cover;
+        width: 100vw;
+        height: 130vh;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #about {
+        background: url('../images/bg_nuage.jpg');
+        width: 100%;
+        height: auto;
+        color: white;
+    }
+
+    .backgroundcolor {
+        background-color: rgba(0, 179, 250, 0.3);
+        height: 90vh;
+    }
+}
+
 html {
     font-size: 1rem;
 }
 
-@include media-breakpoint-up(sm) {
-    html {
-        font-size: 1.2rem;
-    }
-}
-
-@include media-breakpoint-up(md) {
-    html {
-        font-size: 1.4rem;
-    }
-}
-
-@include media-breakpoint-up(lg) {
-    html {
-        font-size: 1.6rem;
-    }
-}
