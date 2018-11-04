@@ -1,0 +1,101 @@
+@font-face {
+    font-family: newFont;
+    src: url('../fonts/glyphicons-halflings-regular.woff')
+}
+
+html {
+    font-size: 1rem;
+}
+
+.text {
+    font-family: newFont;
+}
+
+.jumbo {
+    line-height: 3;
+}
+
+#home {
+    background: url('../images/bg_header.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    font-size: 30px;
+}
+
+.logo {
+    width: 10rem;
+}
+
+.suiteLogo {
+    font-size: 2rem
+}
+
+@media screen and (min-width: 960px) {
+    .text {
+        padding-top: 15vh;
+    }
+
+    #home {
+        width: 100vw;
+        height: 130vh;
+    }
+
+    .hamburger {
+        margin-right: 5em;
+    }
+
+    .logo {
+        margin-left: 3.5em;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 960px) {
+    .text {
+        padding-top: 10vh;
+    }
+
+    .logo {
+        width: 20rem;
+    }
+    
+    .suiteLogo {
+        font-size: 4rem
+    }
+
+    .hamburger {
+        margin-right: 1.5em;
+    }
+
+    .fa-1x {
+        font-size: 1.5rem;
+    }
+    .navbar-toggler.toggler-example {
+        cursor: pointer;
+    }
+}
+
+html {
+    font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 1.4rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 1.6rem;
+    }
+}
